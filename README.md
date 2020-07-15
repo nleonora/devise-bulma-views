@@ -2,7 +2,7 @@
 
 Here are some of the highlights:
 
-- Devise views with Bulma CSS
+- [Devise](https://github.com/heartcombo/devise#starting-with-rails) views with Bulma CSS
 - Responsive layout
 - I18n support
 
