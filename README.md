@@ -17,6 +17,12 @@ Make sure Bulma is installed:
 gem 'bulma-rails', '~> 0.8.0'
 ```
 
+To import all assets in your Rails project, add the following line to your application.scss:
+
+```
+@import "bulma";
+```
+
 #### OR
 
 ### CDN
