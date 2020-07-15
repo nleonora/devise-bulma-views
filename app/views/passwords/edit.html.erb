@@ -1,18 +1,22 @@
-<div id="clearance" class="password-reset">
-  <h2><%= t(".title") %></h2>
+<div class="container" style="display: flex; justify-content: center;">
+  <div class="section column is-6">
+    <div id="clearance" class="password-reset">
+      <h2 class="title"><%= t(".title") %></h2>
 
-  <p><%= t(".description") %></p>
+      <p><%= t(".description") %></p>
 
-  <%= form_for :password_reset,
-        url: user_password_path(@user, token: @user.confirmation_token),
-        html: { method: :put } do |form| %>
-    <div class="password-field">
-      <%= form.label :password %>
-      <%= form.password_field :password %>
+      <%= form_for :password_reset,
+            url: user_password_path(@user, token: @user.confirmation_token),
+            html: { method: :put } do |form| %>
+        <div class="password-field field">
+          <%= form.label :password, class: "label" %>
+          <%= form.password_field :password, class: "input" %>
+        </div>
+
+        <div class="submit-field field">
+          <%= form.submit class: "button is-primary" %>
+        </div>
+      <% end %>
     </div>
-
-    <div class="submit-field">
-      <%= form.submit %>
-    </div>
-  <% end %>
+  </div>
 </div>
