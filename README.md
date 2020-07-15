@@ -28,7 +28,8 @@ gem 'bulma-rails', '~> 0.8.0'
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'devise-bulma-views', '~> 0.1.0'
+# gem 'devise-bulma-views', '~> 0.1.0'
+gem 'devise-bulma-views', '~> 0.1.0', :git => "git@github.com:nleonora/devise-bulma-views.git"
 ```
 
 And then execute:
