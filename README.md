@@ -35,7 +35,8 @@ Add this line to your application's Gemfile:
 
 ```ruby
 # gem 'devise-bulma-views', '~> 0.1.0'
-gem 'devise-bulma-views', '~> 0.1.0', :git => "git@github.com:nleonora/devise-bulma-views.git"
+# gem 'devise-bulma-views', '~> 0.1.0', :git => "git@github.com:nleonora/devise-bulma-views.git"
+gem 'devise-bulma-views', '~> 0.1.0', :git => "https://github.com/nleonora/devise-bulma-views.git"
 ```
 
 And then execute:
