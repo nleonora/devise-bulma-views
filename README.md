@@ -2,7 +2,12 @@
 
 Here are some of the highlights:
 
-- [Devise](https://github.com/heartcombo/devise#starting-with-rails) views with Bulma CSS using ERB
+- [Clearance](https://github.com/thoughtbot/clearance) views with Bulma CSS using ERB
+    - Don't need to run the following in clearance, because this gem will generate all those files
+        ```
+        rails generate clearance:views
+        ```
+    - But if it has already been done, no worries, just overwrite them when asked to.
 - Responsive layout
 - I18n support
 
@@ -35,7 +40,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 # gem 'devise-bulma-views', '~> 0.1.0'
-gem 'devise-bulma-views', '~> 0.1.0', :git => "git@github.com:nleonora/devise-bulma-views.git"
+gem 'devise-bulma-views', '~> 0.1.0', :git => "git@github.com:nleonora/devise-bulma-views.git", :branch => "clearance"
 ```
 
 And then execute:
